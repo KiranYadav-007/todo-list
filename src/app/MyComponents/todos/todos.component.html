@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="text-center mb-5">Todo List by Kiran Yadav</h1>
+<app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+<h4>Your Todos</h4>
+<div *ngIf="this.todos.length===0; else elseBlock">Add your first Todo</div>
+<ng-template #elseBlock>
+<div *ngFor="let todo of todos"><!--Provides a for loop,it is used as a custom html attribute-->
+    <app-todo-item [todo]= "todo" (todoDelete)="deleteTodo($event)">
+    </app-todo-item>
+</div>
+</ng-template>
+</div>
