@@ -1,2 +1,2 @@
 # todo-list
-Using Angular
+Deployment of a Todo List website using Angular on GitHub pages.
