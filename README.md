@@ -1,1 +1,2 @@
-# cwh-todo-list
+# todo-list
+Using Angular
